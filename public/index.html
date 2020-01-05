@@ -1,0 +1,22 @@
+<html>
+    <body>
+    <div id="ui" class="ui">
+        <div class="ui--controls">
+            <div class="ui--controls-control state">
+                <span class="ui--controls-control-label">State</span>
+                <span class="ui--controls-control-content">
+                    <button onclick="game.start()" name="start">&#9654;</button>
+                    <button onclick="game.stop()" name="stop">&#9632;</button>
+                </span>
+            </div>
+            <div class="ui--controls-control volume">
+                <span class="ui--controls-control-label">Volume</span>
+                <span class="ui--controls-control-content">
+                    <input class="slider" name="vol_main" type="range" min="0" max="100" step="1" />
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="game"></div>
+    </body>
+</html>

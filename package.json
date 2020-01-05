@@ -1,13 +1,38 @@
 {
+  "name": "up-it-pump",
+  "version": "1.0.0",
+  "description": "this tries to be a port of pump it up",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack",
+    "start": "webpack-dev-server --open --config config/webpack.config.dev.js"
+  },
+  "keywords": [
+    "ddr",
+    "piu"
+  ],
+  "author": "Jonathan Navarro",
+  "license": "GNU",
   "dependencies": {
-    "@babel/core": "^7.0.0-beta.35",
-    "@babel/preset-env": "^7.0.0-beta.35",
-    "babel-loader": "8.0.0-beta.0",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-loader": "8.0.6",
     "browser-request": "^0.3.3",
-    "gulp": "^3.9.1",
-    "gulp-connect": "^5.0.0",
-    "howler": "^2.0.7",
-    "pixi.js": "^4.6.2",
-    "webpack-stream": "^4.0.0"
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "howler": "^2.1.3",
+    "pixi.js": "^5.2.0",
+    "webpack": "^4.41.5",
+    "webpack-stream": "^5.2.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "css-loader": "^3.4.1",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.1.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   }
 }

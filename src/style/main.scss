@@ -1,0 +1,20 @@
+@import 'controls.scss';
+@import 'helpers.scss';
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+#game {
+  width: 100%;
+  height: 100%;
+}

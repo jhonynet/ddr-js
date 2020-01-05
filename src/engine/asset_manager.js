@@ -1,7 +1,7 @@
 import * as PIXI from 'pixi.js';
 import request from 'browser-request';
 
-const loader = PIXI.loader;
+const loader = PIXI.Loader.shared;
 
 var resources = {};
 

@@ -16,8 +16,8 @@ class Engine {
         return this._assetManager;
     }
 
-    createStage(width, height) {
-        return new Stage(width, height);
+    createStage() {
+        return new Stage();
     }
 }
 

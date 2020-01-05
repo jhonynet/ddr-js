@@ -1,14 +1,22 @@
 import * as PIXI from 'pixi.js';
+import debug from "../utils/debug";
 
 // The Stage class is responsible for creating new PIXI items
 class Stage {
-    constructor(width, height) {
-        this._WIDTH = width;
-        this._HEIGHT = height;
-
-        this._scene = new PIXI.Application(width, height, {
-            backgroundColor : '000000'
+    constructor() {
+        this._scene = new PIXI.Application(window.innerWidth, window.innerHeight, {
+            transparent: true,
+            antialias: true,
+            autoResize: true,
+            resolution: devicePixelRatio
         });
+        window.addEventListener('resize', this._resize.bind(this));
+        this._resize();
+    }
+
+    _resize() {
+        // Resize the renderer
+        this._scene.renderer.resize(window.innerWidth, window.innerHeight);
     }
 
     // Utility function for creating PIXI containers
@@ -34,11 +42,11 @@ class Stage {
     }
 
     get width() {
-        return this._WIDTH;
+        return window.innerWidth;
     }
 
     get height() {
-        return this._HEIGHT;
+        return window.innerHeight;
     }
 }
 

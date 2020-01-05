@@ -1,6 +1,6 @@
 import {Howl} from 'howler';
 
-module.exports = {
+export default {
     load: function (fileName) {
         if (!fileName) {
             return;
@@ -11,4 +11,4 @@ module.exports = {
             src: [fileName]
         });
     }
-};
+}
